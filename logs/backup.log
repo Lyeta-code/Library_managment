@@ -1,0 +1,90 @@
+set -o pipefail; /usr/bin/mariadb-dump --user=_d6215bf60cb767e0 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d6215bf60cb767e0 | /usr/bin/gzip >> ./dcode.com/private/backups/20241204_203001-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-12-04 20:30:02.418282
+Config  : ./dcode.com/private/backups/20241204_203001-dcode_com-site_config_backup.json 94.0B
+Database: ./dcode.com/private/backups/20241204_203001-dcode_com-database.sql.gz         277.9KiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_00b39589d81317c4 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _00b39589d81317c4 | /usr/bin/gzip >> ./radiologist_com/private/backups/20241204_203002-radiologist_com-database.sql.gz
+
+Backup Summary for radiologist_com at 2024-12-04 20:30:02.797626
+Config  : ./radiologist_com/private/backups/20241204_203002-radiologist_com-site_config_backup.json 94.0B
+Database: ./radiologist_com/private/backups/20241204_203002-radiologist_com-database.sql.gz         277.7KiB
+Backup for Site radiologist_com has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_d6215bf60cb767e0 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d6215bf60cb767e0 | /usr/bin/gzip >> ./dcode.com/private/backups/20241206_143002-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-12-06 14:30:03.584283
+Config  : ./dcode.com/private/backups/20241206_143002-dcode_com-site_config_backup.json 94.0B
+Database: ./dcode.com/private/backups/20241206_143002-dcode_com-database.sql.gz         277.9KiB
+Backup for Site dcode.com has been successfully completed
+File ./radiologist_com/private/backups/20241204_203002-radiologist_com-site_config_backup.json is older than 24 hours
+File ./radiologist_com/private/backups/20241204_203002-radiologist_com-database.sql.gz is older than 24 hours
+set -o pipefail; /usr/bin/mariadb-dump --user=_00b39589d81317c4 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _00b39589d81317c4 | /usr/bin/gzip >> ./radiologist_com/private/backups/20241206_120003-radiologist_com-database.sql.gz
+
+Backup Summary for radiologist_com at 2024-12-06 12:00:04.104466
+Config  : ./radiologist_com/private/backups/20241206_120003-radiologist_com-site_config_backup.json 153.0B
+Database: ./radiologist_com/private/backups/20241206_120003-radiologist_com-database.sql.gz         288.3KiB
+Backup for Site radiologist_com has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_d6215bf60cb767e0 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d6215bf60cb767e0 | /usr/bin/gzip >> ./dcode.com/private/backups/20241206_203003-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-12-06 20:30:04.082335
+Config  : ./dcode.com/private/backups/20241206_203003-dcode_com-site_config_backup.json 94.0B
+Database: ./dcode.com/private/backups/20241206_203003-dcode_com-database.sql.gz         291.9KiB
+Backup for Site dcode.com has been successfully completed
+File ./radiologist_com/private/backups/20241206_120003-radiologist_com-site_config_backup.json is recent
+File ./radiologist_com/private/backups/20241206_120003-radiologist_com-database.sql.gz is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_00b39589d81317c4 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _00b39589d81317c4 | /usr/bin/gzip >> ./radiologist_com/private/backups/20241206_180004-radiologist_com-database.sql.gz
+
+Backup Summary for radiologist_com at 2024-12-06 18:00:04.680669
+Config  : ./radiologist_com/private/backups/20241206_180004-radiologist_com-site_config_backup.json 220.0B
+Database: ./radiologist_com/private/backups/20241206_180004-radiologist_com-database.sql.gz         304.2KiB
+Backup for Site radiologist_com has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_d6215bf60cb767e0 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d6215bf60cb767e0 | /usr/bin/gzip >> ./dcode.com/private/backups/20241210_143002-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-12-10 14:30:03.126623
+Config  : ./dcode.com/private/backups/20241210_143002-dcode_com-site_config_backup.json 94.0B
+Database: ./dcode.com/private/backups/20241210_143002-dcode_com-database.sql.gz         291.9KiB
+Backup for Site dcode.com has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_dd082edecd159853 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _dd082edecd159853 | /usr/bin/gzip >> ./erpnext.local/private/backups/20241210_143003-erpnext_local-database.sql.gz
+
+Backup Summary for erpnext.local at 2024-12-10 14:30:03.590990
+Config  : ./erpnext.local/private/backups/20241210_143003-erpnext_local-site_config_backup.json 94.0B
+Database: ./erpnext.local/private/backups/20241210_143003-erpnext_local-database.sql.gz         273.0KiB
+Backup for Site erpnext.local has been successfully completed
+File ./radiologist_com/private/backups/20241206_180004-radiologist_com-database.sql.gz is older than 24 hours
+File ./radiologist_com/private/backups/20241206_120003-radiologist_com-site_config_backup.json is older than 24 hours
+File ./radiologist_com/private/backups/20241206_180004-radiologist_com-site_config_backup.json is older than 24 hours
+File ./radiologist_com/private/backups/20241206_120003-radiologist_com-database.sql.gz is older than 24 hours
+set -o pipefail; /usr/bin/mariadb-dump --user=_00b39589d81317c4 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _00b39589d81317c4 | /usr/bin/gzip >> ./radiologist_com/private/backups/20241210_120003-radiologist_com-database.sql.gz
+
+Backup Summary for radiologist_com at 2024-12-10 12:00:03.965961
+Config  : ./radiologist_com/private/backups/20241210_120003-radiologist_com-site_config_backup.json 220.0B
+Database: ./radiologist_com/private/backups/20241210_120003-radiologist_com-database.sql.gz         308.5KiB
+Backup for Site radiologist_com has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_d6215bf60cb767e0 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d6215bf60cb767e0 | /usr/bin/gzip >> ./dcode.com/private/backups/20241210_203002-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-12-10 20:30:03.914988
+Config  : ./dcode.com/private/backups/20241210_203002-dcode_com-site_config_backup.json 94.0B
+Database: ./dcode.com/private/backups/20241210_203002-dcode_com-database.sql.gz         291.9KiB
+Backup for Site dcode.com has been successfully completed
+File ./erpnext.local/private/backups/20241210_143003-erpnext_local-site_config_backup.json is recent
+File ./erpnext.local/private/backups/20241210_143003-erpnext_local-database.sql.gz is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_dd082edecd159853 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _dd082edecd159853 | /usr/bin/gzip >> ./erpnext.local/private/backups/20241210_203003-erpnext_local-database.sql.gz
+
+Backup Summary for erpnext.local at 2024-12-10 20:30:06.218790
+Config  : ./erpnext.local/private/backups/20241210_203003-erpnext_local-site_config_backup.json 94.0B
+Database: ./erpnext.local/private/backups/20241210_203003-erpnext_local-database.sql.gz         1.0MiB
+Backup for Site erpnext.local has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_d906184fe1d31cba --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d906184fe1d31cba | /usr/bin/gzip >> ./library_managment/private/backups/20241210_203006-library_managment-database.sql.gz
+
+Backup Summary for library_managment at 2024-12-10 20:30:07.054805
+Config  : ./library_managment/private/backups/20241210_203006-library_managment-site_config_backup.json 94.0B
+Database: ./library_managment/private/backups/20241210_203006-library_managment-database.sql.gz         272.9KiB
+Backup for Site library_managment has been successfully completed
+File ./radiologist_com/private/backups/20241210_120003-radiologist_com-database.sql.gz is recent
+File ./radiologist_com/private/backups/20241210_120003-radiologist_com-site_config_backup.json is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_00b39589d81317c4 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _00b39589d81317c4 | /usr/bin/gzip >> ./radiologist_com/private/backups/20241210_180007-radiologist_com-database.sql.gz
+
+Backup Summary for radiologist_com at 2024-12-10 18:00:08.269398
+Config  : ./radiologist_com/private/backups/20241210_180007-radiologist_com-site_config_backup.json 220.0B
+Database: ./radiologist_com/private/backups/20241210_180007-radiologist_com-database.sql.gz         332.4KiB
+Backup for Site radiologist_com has been successfully completed

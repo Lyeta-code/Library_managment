@@ -1,0 +1,520 @@
+2024-12-04 16:48:06,484 DEBUG cd frappe-bench && python3.11 -m venv env
+2024-12-04 16:48:09,589 DEBUG cd frappe-bench && /home/aakvatech/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2024-12-04 16:48:13,626 DEBUG cd frappe-bench && /home/aakvatech/frappe-bench/env/bin/python -m pip install --quiet wheel
+2024-12-04 16:48:18,408 LOG Getting frappe
+2024-12-04 16:48:18,408 DEBUG cd frappe-bench/apps && git clone https://github.com/frappe/frappe.git --branch version-15 --depth 1 --origin upstream
+2024-12-04 16:48:52,119 WARNING cd frappe-bench/apps && git clone https://github.com/frappe/frappe.git --branch version-15 --depth 1 --origin upstream executed with exit code 128
+2024-12-04 16:48:53,132 ERROR There was a problem while creating frappe-bench
+2024-12-04 16:51:20,841 WARNING /home/aakvatech/.local/bin/bench init frappe-bench --frappe-branch version-15 --python python3.11 executed with exit code 1
+2024-12-04 16:51:21,830 INFO /home/aakvatech/.local/bin/bench start
+2024-12-04 16:52:04,356 INFO /home/aakvatech/.local/bin/bench init frappe-bench --frappe-branch version-15 --python python3.11
+2024-12-04 16:52:04,396 DEBUG cd frappe-bench && python3.11 -m venv env
+2024-12-04 16:52:07,322 DEBUG cd frappe-bench && /home/aakvatech/frappe-bench/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2024-12-04 16:52:09,406 DEBUG cd frappe-bench && /home/aakvatech/frappe-bench/frappe-bench/env/bin/python -m pip install --quiet wheel
+2024-12-04 16:52:12,444 LOG Getting frappe
+2024-12-04 16:52:12,444 DEBUG cd frappe-bench/apps && git clone https://github.com/frappe/frappe.git --branch version-15 --depth 1 --origin upstream
+2024-12-04 16:53:25,505 WARNING cd frappe-bench/apps && git clone https://github.com/frappe/frappe.git --branch version-15 --depth 1 --origin upstream executed with exit code 128
+2024-12-04 16:53:26,510 ERROR There was a problem while creating frappe-bench
+2024-12-04 16:53:44,522 WARNING /home/aakvatech/.local/bin/bench init frappe-bench --frappe-branch version-15 --python python3.11 executed with exit code 1
+2024-12-04 17:05:54,697 INFO /home/aakvatech/.local/bin/bench start
+2024-12-04 17:06:14,877 INFO /home/aakvatech/.local/bin/bench new-site dcode.com
+2024-12-04 17:07:25,029 INFO /home/aakvatech/.local/bin/bench new-site dcode.com
+2024-12-04 17:07:41,948 INFO /home/aakvatech/.local/bin/bench new-site dcode.com
+2024-12-04 17:08:38,989 INFO /home/aakvatech/.local/bin/bench start
+2024-12-04 17:08:39,331 INFO /home/aakvatech/.local/bin/bench schedule
+2024-12-04 17:08:39,331 INFO /home/aakvatech/.local/bin/bench worker
+2024-12-04 17:08:39,354 INFO /home/aakvatech/.local/bin/bench watch
+2024-12-04 17:09:24,120 INFO /home/aakvatech/.local/bin/bench get-app frappe --branch version-15
+2024-12-04 17:09:25,876 LOG Getting frappe
+2024-12-04 17:09:25,877 DEBUG cd ./apps && git clone https://github.com/frappe/frappe.git --branch version-15 --depth 1 --origin upstream
+2024-12-04 17:11:15,905 LOG Installing frappe
+2024-12-04 17:11:15,905 DEBUG cd /home/aakvatech/frappe-bench && /home/aakvatech/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/aakvatech/frappe-bench/apps/frappe 
+2024-12-04 17:12:27,301 DEBUG cd /home/aakvatech/frappe-bench/apps/frappe && yarn install --check-files
+2024-12-04 17:12:40,107 DEBUG bench build --app frappe
+2024-12-04 17:12:40,380 INFO /home/aakvatech/.local/bin/bench build --app frappe
+2024-12-04 17:13:17,163 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-12-04 17:16:39,885 INFO /home/aakvatech/.local/bin/bench get-app frappe --branch version-15
+2024-12-04 17:16:54,622 LOG Installing frappe
+2024-12-04 17:16:54,622 DEBUG cd /home/aakvatech/frappe-bench && /home/aakvatech/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/aakvatech/frappe-bench/apps/frappe 
+2024-12-04 17:16:57,829 DEBUG cd /home/aakvatech/frappe-bench/apps/frappe && yarn install --check-files
+2024-12-04 17:16:59,529 DEBUG bench build --app frappe
+2024-12-04 17:16:59,637 INFO /home/aakvatech/.local/bin/bench build --app frappe
+2024-12-04 17:17:35,337 DEBUG cd /home/aakvatech/frappe-bench && sudo supervisorctl restart frappe:
+2024-12-04 17:17:35,524 WARNING cd /home/aakvatech/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-12-04 17:17:35,524 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-12-04 17:17:49,508 INFO /home/aakvatech/.local/bin/bench restart
+2024-12-04 17:17:49,860 DEBUG cd /home/aakvatech/frappe-bench && sudo supervisorctl restart frappe:
+2024-12-04 17:17:50,051 WARNING cd /home/aakvatech/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-12-04 17:17:50,051 WARNING /home/aakvatech/.local/bin/bench restart executed with exit code 1
+2024-12-04 17:19:22,173 INFO /home/aakvatech/.local/bin/bench setup supervisor
+2024-12-04 17:19:22,354 LOG Updated supervisord.conf: 'chmod' changed from '0700                       ; sockef file mode (default 0700)' to '0760'
+2024-12-04 17:19:22,354 LOG Updated supervisord.conf: 'chown' changed from '' to 'aakvatech:aakvatech'
+2024-12-04 17:19:27,687 INFO /home/aakvatech/.local/bin/bench setup supervisor
+2024-12-04 17:19:27,864 LOG Updated supervisord.conf: 'chmod' changed from '0700                       ; sockef file mode (default 0700)' to '0760'
+2024-12-04 17:19:27,864 LOG Updated supervisord.conf: 'chown' changed from '' to 'aakvatech:aakvatech'
+2024-12-04 17:19:34,027 WARNING /home/aakvatech/.local/bin/bench setup supervisor executed with exit code 1
+2024-12-04 17:20:02,906 INFO /home/aakvatech/.local/bin/bench new-site dcode.com
+2024-12-04 17:20:56,021 INFO /home/aakvatech/.local/bin/bench --site dcode.com add-to-hosts
+2024-12-04 17:21:14,323 INFO /home/aakvatech/.local/bin/bench get-app erpnext --branch version-15
+2024-12-04 17:21:15,545 LOG Getting erpnext
+2024-12-04 17:21:15,545 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-15 --depth 1 --origin upstream
+2024-12-04 17:21:49,187 LOG Installing erpnext
+2024-12-04 17:21:49,187 DEBUG cd /home/aakvatech/frappe-bench && /home/aakvatech/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/aakvatech/frappe-bench/apps/erpnext 
+2024-12-04 17:22:04,809 DEBUG cd /home/aakvatech/frappe-bench/apps/erpnext && yarn install --check-files
+2024-12-04 17:22:05,173 DEBUG bench build --app erpnext
+2024-12-04 17:22:05,281 INFO /home/aakvatech/.local/bin/bench build --app erpnext
+2024-12-04 17:22:08,239 DEBUG cd /home/aakvatech/frappe-bench && sudo supervisorctl restart frappe:
+2024-12-04 17:22:08,421 WARNING cd /home/aakvatech/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-12-04 17:22:08,421 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-12-04 17:22:09,549 INFO /home/aakvatech/.local/bin/bench get-app https://github.com/frappe/erpnext --branch version-15
+2024-12-04 17:22:20,840 INFO App moved from apps/erpnext to archived/apps/erpnext-2024-12-04
+2024-12-04 17:22:20,842 LOG Getting erpnext
+2024-12-04 17:22:20,843 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext --branch version-15 --depth 1 --origin upstream
+2024-12-04 17:23:34,338 WARNING cd ./apps && git clone https://github.com/frappe/erpnext --branch version-15 --depth 1 --origin upstream executed with exit code 128
+2024-12-04 17:23:34,338 WARNING /home/aakvatech/.local/bin/bench get-app https://github.com/frappe/erpnext --branch version-15 executed with exit code 1
+2024-12-04 17:23:34,946 INFO /home/aakvatech/.local/bin/bench --site dcode.com install-app erpnext
+2024-12-04 17:23:35,359 INFO /home/aakvatech/.local/bin/bench start
+2024-12-04 17:23:35,710 INFO /home/aakvatech/.local/bin/bench schedule
+2024-12-04 17:23:35,720 INFO /home/aakvatech/.local/bin/bench serve --port 8002
+2024-12-04 17:23:35,727 INFO /home/aakvatech/.local/bin/bench worker
+2024-12-04 17:23:35,757 INFO /home/aakvatech/.local/bin/bench watch
+2024-12-04 17:24:23,991 INFO /home/aakvatech/.local/bin/bench new-site radiologist_com
+2024-12-04 17:26:20,389 INFO /home/aakvatech/.local/bin/bench get-app erpnext --branch version-15
+2024-12-04 17:26:21,862 LOG Getting erpnext
+2024-12-04 17:26:21,863 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-15 --depth 1 --origin upstream
+2024-12-04 17:27:49,038 WARNING cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-15 --depth 1 --origin upstream executed with exit code 128
+2024-12-04 17:27:49,039 WARNING /home/aakvatech/.local/bin/bench get-app erpnext --branch version-15 executed with exit code 1
+2024-12-04 17:28:50,759 INFO /home/aakvatech/.local/bin/bench clear-cache
+2024-12-04 17:28:51,164 INFO /home/aakvatech/.local/bin/bench setup requirements
+2024-12-04 17:28:51,169 DEBUG /home/aakvatech/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2024-12-04 17:28:53,158 LOG Installing frappe
+2024-12-04 17:28:53,158 DEBUG cd /home/aakvatech/frappe-bench && /home/aakvatech/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/aakvatech/frappe-bench/apps/frappe 
+2024-12-04 17:28:56,426 DEBUG cd /home/aakvatech/frappe-bench/apps/frappe && yarn install --check-files
+2024-12-04 17:29:19,703 INFO /home/aakvatech/.local/bin/bench new-site radiologist_com
+2024-12-04 17:30:34,202 INFO /home/aakvatech/.local/bin/bench new-app RadiologistIS
+2024-12-04 17:30:34,206 LOG creating new app radiologistis
+2024-12-04 17:32:02,622 LOG Installing radiologistis
+2024-12-04 17:32:02,623 DEBUG cd /home/aakvatech/frappe-bench && /home/aakvatech/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/aakvatech/frappe-bench/apps/radiologistis 
+2024-12-04 17:32:04,471 DEBUG bench build --app radiologistis
+2024-12-04 17:32:04,591 INFO /home/aakvatech/.local/bin/bench build --app radiologistis
+2024-12-04 17:32:06,371 DEBUG cd /home/aakvatech/frappe-bench && sudo supervisorctl restart frappe:
+2024-12-04 17:32:06,563 WARNING cd /home/aakvatech/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-12-04 17:32:06,563 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-12-04 17:33:10,785 INFO /home/aakvatech/.local/bin/bench --site radiologist_com install-app radiologistIS
+2024-12-04 17:33:44,093 INFO /home/aakvatech/.local/bin/bench --site radiologist_com install-app radiologistis
+2024-12-04 17:37:40,941 INFO /home/aakvatech/.local/bin/bench start
+2024-12-04 17:37:41,272 INFO /home/aakvatech/.local/bin/bench serve --port 8002
+2024-12-04 17:37:41,297 INFO /home/aakvatech/.local/bin/bench worker
+2024-12-04 17:37:41,333 INFO /home/aakvatech/.local/bin/bench watch
+2024-12-04 17:37:41,396 INFO /home/aakvatech/.local/bin/bench schedule
+2024-12-04 17:44:29,622 INFO /home/aakvatech/.local/bin/bench start
+2024-12-04 17:44:30,016 INFO /home/aakvatech/.local/bin/bench serve --port 8002
+2024-12-04 17:44:30,034 INFO /home/aakvatech/.local/bin/bench schedule
+2024-12-04 17:44:30,039 INFO /home/aakvatech/.local/bin/bench watch
+2024-12-04 17:44:30,053 INFO /home/aakvatech/.local/bin/bench worker
+2024-12-04 17:58:18,864 INFO /home/aakvatech/.local/bin/bench start
+2024-12-04 17:58:19,222 INFO /home/aakvatech/.local/bin/bench schedule
+2024-12-04 17:58:19,231 INFO /home/aakvatech/.local/bin/bench serve --port 8002
+2024-12-04 17:58:19,267 INFO /home/aakvatech/.local/bin/bench watch
+2024-12-04 17:58:19,285 INFO /home/aakvatech/.local/bin/bench worker
+2024-12-04 18:00:01,513 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-04 18:05:45,280 INFO /usr/local/bin/bench migrate
+2024-12-04 18:06:10,926 INFO /usr/local/bin/bench --site radiologist_com migrate
+2024-12-04 18:06:58,235 INFO /home/aakvatech/.local/bin/bench start
+2024-12-04 18:06:58,564 INFO /home/aakvatech/.local/bin/bench watch
+2024-12-04 18:06:58,571 INFO /home/aakvatech/.local/bin/bench worker
+2024-12-04 18:06:58,597 INFO /home/aakvatech/.local/bin/bench serve --port 8002
+2024-12-04 18:06:58,606 INFO /home/aakvatech/.local/bin/bench schedule
+2024-12-04 18:07:46,337 INFO /usr/local/bin/bench use radiologist_com
+2024-12-04 18:07:56,254 INFO /usr/local/bin/bench start
+2024-12-04 18:07:56,620 INFO /usr/local/bin/bench worker
+2024-12-04 18:07:56,637 INFO /usr/local/bin/bench schedule
+2024-12-04 18:07:56,660 INFO /usr/local/bin/bench watch
+2024-12-04 18:07:56,700 INFO /usr/local/bin/bench serve --port 8002
+2024-12-06 08:55:26,481 INFO /home/aakvatech/.local/bin/bench start
+2024-12-06 08:55:26,842 INFO /home/aakvatech/.local/bin/bench serve --port 8002
+2024-12-06 08:55:26,843 INFO /home/aakvatech/.local/bin/bench watch
+2024-12-06 08:55:26,846 INFO /home/aakvatech/.local/bin/bench worker
+2024-12-06 08:55:26,856 INFO /home/aakvatech/.local/bin/bench schedule
+2024-12-06 09:10:21,721 INFO /home/aakvatech/.local/bin/bench start
+2024-12-06 09:10:22,168 INFO /home/aakvatech/.local/bin/bench watch
+2024-12-06 09:10:22,187 INFO /home/aakvatech/.local/bin/bench worker
+2024-12-06 09:10:22,188 INFO /home/aakvatech/.local/bin/bench schedule
+2024-12-06 09:10:22,214 INFO /home/aakvatech/.local/bin/bench serve --port 8002
+2024-12-06 09:38:45,501 INFO /home/aakvatech/.local/bin/bench start
+2024-12-06 09:39:16,668 INFO /home/aakvatech/.local/bin/bench start
+2024-12-06 09:39:16,993 INFO /home/aakvatech/.local/bin/bench schedule
+2024-12-06 09:39:16,997 INFO /home/aakvatech/.local/bin/bench worker
+2024-12-06 09:39:17,017 INFO /home/aakvatech/.local/bin/bench serve --port 8002
+2024-12-06 09:39:17,029 INFO /home/aakvatech/.local/bin/bench watch
+2024-12-06 09:40:49,031 INFO /home/aakvatech/.local/bin/bench start
+2024-12-06 09:40:49,386 INFO /home/aakvatech/.local/bin/bench watch
+2024-12-06 09:40:49,401 INFO /home/aakvatech/.local/bin/bench schedule
+2024-12-06 09:40:49,403 INFO /home/aakvatech/.local/bin/bench worker
+2024-12-06 09:40:49,425 INFO /home/aakvatech/.local/bin/bench serve --port 8002
+2024-12-06 09:41:55,067 INFO /home/aakvatech/.local/bin/bench start
+2024-12-06 09:41:55,475 INFO /home/aakvatech/.local/bin/bench schedule
+2024-12-06 09:41:55,479 INFO /home/aakvatech/.local/bin/bench watch
+2024-12-06 09:41:55,484 INFO /home/aakvatech/.local/bin/bench worker
+2024-12-06 09:41:55,503 INFO /home/aakvatech/.local/bin/bench serve --port 8002
+2024-12-06 09:46:26,427 INFO /home/aakvatech/.local/bin/bench get-app frappe --branch version-15
+2024-12-06 09:46:36,197 WARNING /home/aakvatech/.local/bin/bench get-app frappe --branch version-15 executed with exit code 1
+2024-12-06 09:46:51,785 INFO /home/aakvatech/.local/bin/bench restart
+2024-12-06 09:46:57,886 DEBUG cd /home/aakvatech/frappe-bench && sudo supervisorctl restart frappe:
+2024-12-06 09:46:58,084 WARNING cd /home/aakvatech/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-12-06 09:46:58,084 WARNING /home/aakvatech/.local/bin/bench restart executed with exit code 1
+2024-12-06 09:47:57,457 INFO /home/aakvatech/.local/bin/bench start
+2024-12-06 09:47:57,790 INFO /home/aakvatech/.local/bin/bench watch
+2024-12-06 09:47:57,792 INFO /home/aakvatech/.local/bin/bench schedule
+2024-12-06 09:47:57,825 INFO /home/aakvatech/.local/bin/bench serve --port 8002
+2024-12-06 09:47:57,997 INFO /home/aakvatech/.local/bin/bench worker
+2024-12-06 09:54:28,636 INFO /home/aakvatech/.local/bin/bench start
+2024-12-06 09:54:28,983 INFO /home/aakvatech/.local/bin/bench serve --port 8002
+2024-12-06 09:54:28,987 INFO /home/aakvatech/.local/bin/bench watch
+2024-12-06 09:54:29,009 INFO /home/aakvatech/.local/bin/bench worker
+2024-12-06 09:54:29,059 INFO /home/aakvatech/.local/bin/bench schedule
+2024-12-06 09:59:21,268 INFO /home/aakvatech/.local/bin/bench start
+2024-12-06 09:59:21,688 INFO /home/aakvatech/.local/bin/bench watch
+2024-12-06 09:59:21,691 INFO /home/aakvatech/.local/bin/bench serve --port 8002
+2024-12-06 09:59:21,699 INFO /home/aakvatech/.local/bin/bench worker
+2024-12-06 09:59:21,759 INFO /home/aakvatech/.local/bin/bench schedule
+2024-12-06 10:01:49,835 INFO /home/aakvatech/.local/bin/bench watch --app radiologistis
+2024-12-06 10:02:12,102 INFO /home/aakvatech/.local/bin/bench watch
+2024-12-06 10:19:32,580 INFO /home/aakvatech/.local/bin/bench build
+2024-12-06 10:25:32,965 INFO /home/aakvatech/.local/bin/bench set-config developer_mode 1
+2024-12-06 10:25:33,622 INFO /home/aakvatech/.local/bin/bench set-config restart_realtime_on_change true
+2024-12-06 10:26:00,270 INFO /home/aakvatech/.local/bin/bench start
+2024-12-06 10:26:45,703 INFO /home/aakvatech/.local/bin/bench start
+2024-12-06 10:27:06,088 INFO /home/aakvatech/.local/bin/bench setup requirements
+2024-12-06 10:27:06,098 DEBUG /home/aakvatech/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2024-12-06 10:27:08,251 LOG Installing frappe
+2024-12-06 10:27:08,251 DEBUG cd /home/aakvatech/frappe-bench && /home/aakvatech/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/aakvatech/frappe-bench/apps/frappe 
+2024-12-06 10:27:12,543 DEBUG cd /home/aakvatech/frappe-bench/apps/frappe && yarn install --check-files
+2024-12-06 10:27:15,908 LOG Installing radiologistis
+2024-12-06 10:27:15,908 DEBUG cd /home/aakvatech/frappe-bench && /home/aakvatech/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/aakvatech/frappe-bench/apps/radiologistis 
+2024-12-06 10:27:19,738 INFO /home/aakvatech/.local/bin/bench build
+2024-12-06 10:28:07,355 INFO /home/aakvatech/.local/bin/bench start
+2024-12-06 10:28:46,340 INFO /home/aakvatech/.local/bin/bench start
+2024-12-06 10:28:59,247 INFO /home/aakvatech/.local/bin/bench watch --app radiologistis
+2024-12-06 10:29:11,228 INFO /home/aakvatech/.local/bin/bench watch --apps radiologistis
+2024-12-06 10:35:32,573 INFO /home/aakvatech/.local/bin/bench start
+2024-12-06 10:35:54,693 INFO /home/aakvatech/.local/bin/bench set-config developer_mode 1
+2024-12-06 10:36:37,331 INFO /home/aakvatech/.local/bin/bench start
+2024-12-06 10:39:07,710 INFO /home/aakvatech/.local/bin/bench start
+2024-12-06 10:39:08,047 INFO /home/aakvatech/.local/bin/bench schedule
+2024-12-06 10:39:08,058 INFO /home/aakvatech/.local/bin/bench worker
+2024-12-06 10:39:08,091 INFO /home/aakvatech/.local/bin/bench watch
+2024-12-06 10:39:08,138 INFO /home/aakvatech/.local/bin/bench serve --port 8002
+2024-12-06 10:46:05,600 INFO /home/aakvatech/.local/bin/bench build
+2024-12-06 10:46:36,951 INFO /home/aakvatech/.local/bin/bench start
+2024-12-06 10:46:37,290 INFO /home/aakvatech/.local/bin/bench serve --port 8002
+2024-12-06 10:46:37,296 INFO /home/aakvatech/.local/bin/bench worker
+2024-12-06 10:46:37,310 INFO /home/aakvatech/.local/bin/bench schedule
+2024-12-06 10:46:37,358 INFO /home/aakvatech/.local/bin/bench watch
+2024-12-06 10:50:40,772 INFO /home/aakvatech/.local/bin/bench start
+2024-12-06 10:50:41,109 INFO /home/aakvatech/.local/bin/bench schedule
+2024-12-06 10:50:41,111 INFO /home/aakvatech/.local/bin/bench worker
+2024-12-06 10:50:41,130 INFO /home/aakvatech/.local/bin/bench serve --port 8002
+2024-12-06 10:50:41,160 INFO /home/aakvatech/.local/bin/bench watch
+2024-12-06 10:52:18,513 INFO /home/aakvatech/.local/bin/bench stop
+2024-12-06 10:53:45,104 INFO /home/aakvatech/.local/bin/bench start
+2024-12-06 10:53:45,432 INFO /home/aakvatech/.local/bin/bench watch
+2024-12-06 10:53:45,500 INFO /home/aakvatech/.local/bin/bench worker
+2024-12-06 10:53:45,500 INFO /home/aakvatech/.local/bin/bench serve --port 8002
+2024-12-06 10:53:45,515 INFO /home/aakvatech/.local/bin/bench schedule
+2024-12-06 10:55:30,727 INFO /home/aakvatech/.local/bin/bench start
+2024-12-06 10:55:31,051 INFO /home/aakvatech/.local/bin/bench schedule
+2024-12-06 10:55:31,060 INFO /home/aakvatech/.local/bin/bench worker
+2024-12-06 10:55:31,099 INFO /home/aakvatech/.local/bin/bench serve --port 8002
+2024-12-06 10:55:31,228 INFO /home/aakvatech/.local/bin/bench watch
+2024-12-06 10:57:13,076 INFO /home/aakvatech/.local/bin/bench use radiologist_com
+2024-12-06 10:57:19,100 INFO /home/aakvatech/.local/bin/bench start
+2024-12-06 10:57:19,450 INFO /home/aakvatech/.local/bin/bench watch
+2024-12-06 10:57:19,455 INFO /home/aakvatech/.local/bin/bench serve --port 8002
+2024-12-06 10:57:19,467 INFO /home/aakvatech/.local/bin/bench worker
+2024-12-06 10:57:19,537 INFO /home/aakvatech/.local/bin/bench schedule
+2024-12-06 10:58:37,068 INFO /home/aakvatech/.local/bin/bench --site radiologist_com
+2024-12-06 10:58:42,422 INFO /home/aakvatech/.local/bin/bench --site radiologist_com migrate
+2024-12-06 10:58:55,968 INFO /home/aakvatech/.local/bin/bench build
+2024-12-06 11:00:22,762 INFO /home/aakvatech/.local/bin/bench build
+2024-12-06 11:03:28,283 INFO /home/aakvatech/.local/bin/bench build
+2024-12-06 11:06:49,640 INFO /home/aakvatech/.local/bin/bench clear-cache
+2024-12-06 11:06:50,519 INFO /home/aakvatech/.local/bin/bench build
+2024-12-06 12:00:02,098 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-06 12:36:15,805 INFO /home/aakvatech/.local/bin/bench start
+2024-12-06 12:37:09,148 INFO /home/aakvatech/.local/bin/bench start
+2024-12-06 12:37:47,512 INFO /home/aakvatech/.local/bin/bench start
+2024-12-06 12:38:19,004 INFO /home/aakvatech/.local/bin/bench new-site dcode.com
+2024-12-06 12:38:19,733 INFO /home/aakvatech/.local/bin/bench --site dcode.com add-to-hosts
+2024-12-06 12:38:29,807 INFO /home/aakvatech/.local/bin/bench new-site dcode.com
+2024-12-06 12:38:51,151 INFO /home/aakvatech/.local/bin/bench --site dcode.com add-to-hosts
+2024-12-06 12:39:11,481 INFO /home/aakvatech/.local/bin/bench new-site radiologist_com
+2024-12-06 12:39:37,475 INFO /home/aakvatech/.local/bin/bench new-app radiologistis
+2024-12-06 12:39:37,479 LOG creating new app radiologistis
+2024-12-06 12:40:49,042 LOG Installing radiologistis
+2024-12-06 12:40:49,044 DEBUG cd /home/aakvatech/frappe-bench && /home/aakvatech/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/aakvatech/frappe-bench/apps/radiologistis 
+2024-12-06 12:40:53,469 DEBUG bench build --app radiologistis
+2024-12-06 12:40:53,602 INFO /home/aakvatech/.local/bin/bench build --app radiologistis
+2024-12-06 12:40:55,979 DEBUG cd /home/aakvatech/frappe-bench && sudo supervisorctl restart frappe:
+2024-12-06 12:40:56,192 WARNING cd /home/aakvatech/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-12-06 12:40:56,192 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-12-06 12:41:28,498 INFO /home/aakvatech/.local/bin/bench --site radiologist_com install-app radiologistis
+2024-12-06 12:42:00,654 INFO /home/aakvatech/.local/bin/bench start
+2024-12-06 12:42:43,089 INFO /home/aakvatech/.local/bin/bench get-app erpnext --branch version-15
+2024-12-06 12:42:44,387 LOG Getting erpnext
+2024-12-06 12:42:44,387 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-15 --depth 1 --origin upstream
+2024-12-06 12:43:13,782 LOG Installing erpnext
+2024-12-06 12:43:13,782 DEBUG cd /home/aakvatech/frappe-bench && /home/aakvatech/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/aakvatech/frappe-bench/apps/erpnext 
+2024-12-06 12:43:15,751 DEBUG cd /home/aakvatech/frappe-bench/apps/erpnext && yarn install --check-files
+2024-12-06 12:43:16,755 DEBUG bench build --app erpnext
+2024-12-06 12:43:16,864 INFO /home/aakvatech/.local/bin/bench build --app erpnext
+2024-12-06 12:43:19,769 DEBUG cd /home/aakvatech/frappe-bench && sudo supervisorctl restart frappe:
+2024-12-06 12:43:19,973 WARNING cd /home/aakvatech/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-12-06 12:43:19,973 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-12-06 12:43:33,902 INFO /home/aakvatech/.local/bin/bench restart
+2024-12-06 12:43:34,268 DEBUG cd /home/aakvatech/frappe-bench && sudo supervisorctl restart frappe:
+2024-12-06 12:43:34,473 WARNING cd /home/aakvatech/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-12-06 12:43:34,473 WARNING /home/aakvatech/.local/bin/bench restart executed with exit code 1
+2024-12-06 12:44:08,508 INFO /home/aakvatech/.local/bin/bench restart frappe
+2024-12-06 12:44:08,518 WARNING /home/aakvatech/.local/bin/bench restart frappe executed with exit code 2
+2024-12-06 12:44:18,451 INFO /home/aakvatech/.local/bin/bench restart
+2024-12-06 12:44:18,815 DEBUG cd /home/aakvatech/frappe-bench && sudo supervisorctl restart frappe:
+2024-12-06 12:44:19,022 WARNING cd /home/aakvatech/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-12-06 12:44:19,023 WARNING /home/aakvatech/.local/bin/bench restart executed with exit code 1
+2024-12-06 12:44:55,331 INFO /home/aakvatech/.local/bin/bench get-app erpnext --branch version-15
+2024-12-06 12:45:04,327 INFO App moved from apps/erpnext to archived/apps/erpnext-2024-12-06
+2024-12-06 12:45:04,336 LOG Getting erpnext
+2024-12-06 12:45:04,337 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-15 --depth 1 --origin upstream
+2024-12-06 12:45:54,224 LOG Installing erpnext
+2024-12-06 12:45:54,224 DEBUG cd /home/aakvatech/frappe-bench && /home/aakvatech/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/aakvatech/frappe-bench/apps/erpnext 
+2024-12-06 12:45:56,206 DEBUG cd /home/aakvatech/frappe-bench/apps/erpnext && yarn install --check-files
+2024-12-06 12:45:56,569 DEBUG bench build --app erpnext
+2024-12-06 12:45:56,678 INFO /home/aakvatech/.local/bin/bench build --app erpnext
+2024-12-06 12:45:59,553 DEBUG cd /home/aakvatech/frappe-bench && sudo supervisorctl restart frappe:
+2024-12-06 12:45:59,753 WARNING cd /home/aakvatech/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-12-06 12:45:59,753 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-12-06 12:46:22,383 INFO /home/aakvatech/.local/bin/bench --site dcode.com install-app erpnext
+2024-12-06 12:46:40,314 INFO /home/aakvatech/.local/bin/bench --site dcode.com install-app erpnext
+2024-12-06 12:46:57,116 INFO /home/aakvatech/.local/bin/bench start
+2024-12-06 12:48:11,202 INFO /home/aakvatech/.local/bin/bench start
+2024-12-06 12:50:16,038 INFO /home/aakvatech/.local/bin/bench start
+2024-12-06 12:50:21,386 INFO /home/aakvatech/.local/bin/bench start
+2024-12-06 12:50:26,008 INFO /home/aakvatech/.local/bin/bench start
+2024-12-06 13:30:46,892 INFO /home/aakvatech/.local/bin/bench start
+2024-12-06 13:30:47,265 INFO /home/aakvatech/.local/bin/bench watch
+2024-12-06 13:30:47,269 INFO /home/aakvatech/.local/bin/bench schedule
+2024-12-06 13:30:47,275 INFO /home/aakvatech/.local/bin/bench worker
+2024-12-06 13:30:47,277 INFO /home/aakvatech/.local/bin/bench serve --port 8002
+2024-12-06 13:36:55,838 INFO /home/aakvatech/.local/bin/bench --site radiologist_com add-to-hosts
+2024-12-06 13:37:27,841 INFO /home/aakvatech/.local/bin/bench start
+2024-12-06 13:37:28,251 INFO /home/aakvatech/.local/bin/bench watch
+2024-12-06 13:37:28,258 INFO /home/aakvatech/.local/bin/bench worker
+2024-12-06 13:37:28,267 INFO /home/aakvatech/.local/bin/bench serve --port 8002
+2024-12-06 13:37:28,275 INFO /home/aakvatech/.local/bin/bench schedule
+2024-12-06 13:44:31,680 INFO /home/aakvatech/.local/bin/bench set-config -g server_script_enabled 1
+2024-12-06 13:44:36,543 INFO /home/aakvatech/.local/bin/bench start
+2024-12-06 13:44:36,970 INFO /home/aakvatech/.local/bin/bench schedule
+2024-12-06 13:44:37,000 INFO /home/aakvatech/.local/bin/bench watch
+2024-12-06 13:44:37,008 INFO /home/aakvatech/.local/bin/bench serve --port 8002
+2024-12-06 13:44:37,009 INFO /home/aakvatech/.local/bin/bench worker
+2024-12-06 18:00:02,236 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-10 09:52:05,985 INFO /home/aakvatech/.local/bin/bench start
+2024-12-10 09:52:06,340 INFO /home/aakvatech/.local/bin/bench serve --port 8002
+2024-12-10 09:52:06,348 INFO /home/aakvatech/.local/bin/bench watch
+2024-12-10 09:52:06,353 INFO /home/aakvatech/.local/bin/bench schedule
+2024-12-10 09:52:06,373 INFO /home/aakvatech/.local/bin/bench worker
+2024-12-10 09:58:45,516 INFO /home/aakvatech/.local/bin/bench start
+2024-12-10 10:02:21,710 INFO /home/aakvatech/.local/bin/bench --site radiologist_com list-apps
+2024-12-10 10:02:41,052 INFO /home/aakvatech/.local/bin/bench --site radiologist_com list-apps --format text
+2024-12-10 10:03:27,561 INFO /home/aakvatech/.local/bin/bench start
+2024-12-10 10:04:57,985 INFO /home/aakvatech/.local/bin/bench stop
+2024-12-10 10:05:11,399 INFO /home/aakvatech/.local/bin/bench shutdown
+2024-12-10 10:05:35,918 INFO /home/aakvatech/.local/bin/bench set-config -g server_script_enabled 1
+2024-12-10 10:13:21,326 INFO /home/aakvatech/.local/bin/bench start
+2024-12-10 10:13:22,596 INFO /home/aakvatech/.local/bin/bench serve --port 8002
+2024-12-10 10:13:22,596 INFO /home/aakvatech/.local/bin/bench schedule
+2024-12-10 10:13:22,596 INFO /home/aakvatech/.local/bin/bench watch
+2024-12-10 10:13:22,596 INFO /home/aakvatech/.local/bin/bench worker
+2024-12-10 10:19:02,738 INFO /home/aakvatech/.local/bin/bench migrte
+2024-12-10 10:20:12,428 INFO /home/aakvatech/.local/bin/bench --site radiologist_com migrate
+2024-12-10 10:21:39,764 INFO /home/aakvatech/.local/bin/bench --site radiologist_com serve
+2024-12-10 10:44:19,648 INFO /home/aakvatech/.local/bin/bench get-app erpnext --branch version-15
+2024-12-10 10:44:26,178 INFO App moved from apps/erpnext to archived/apps/erpnext-2024-12-10
+2024-12-10 10:44:26,182 LOG Getting erpnext
+2024-12-10 10:44:26,182 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-15 --depth 1 --origin upstream
+2024-12-10 10:45:05,460 WARNING cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-15 --depth 1 --origin upstream executed with exit code 128
+2024-12-10 10:45:05,461 WARNING /home/aakvatech/.local/bin/bench get-app erpnext --branch version-15 executed with exit code 1
+2024-12-10 10:50:51,419 INFO /home/aakvatech/.local/bin/bench --site radiologist_com serve
+2024-12-10 11:33:37,091 INFO /home/aakvatech/.local/bin/bench get-app https://github.com/frappe/non_profit.git
+2024-12-10 11:33:37,105 LOG Getting non_profit
+2024-12-10 11:33:37,105 DEBUG cd ./apps && git clone https://github.com/frappe/non_profit.git  --depth 1 --origin upstream
+2024-12-10 11:33:40,129 LOG Installing non_profit
+2024-12-10 11:33:40,130 DEBUG cd /home/aakvatech/frappe-bench && /home/aakvatech/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/aakvatech/frappe-bench/apps/non_profit 
+2024-12-10 11:33:42,054 DEBUG cd /home/aakvatech/frappe-bench && /home/aakvatech/frappe-bench/env/bin/python -m pip install --quiet --upgrade -r ./apps/non_profit/dev-requirements.txt
+2024-12-10 11:34:35,814 DEBUG bench build --app non_profit
+2024-12-10 11:34:35,936 INFO /home/aakvatech/.local/bin/bench build --app non_profit
+2024-12-10 11:35:31,704 DEBUG cd /home/aakvatech/frappe-bench && sudo supervisorctl restart frappe:
+2024-12-10 11:35:31,909 WARNING cd /home/aakvatech/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-12-10 11:35:31,909 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-12-10 11:35:43,574 INFO /home/aakvatech/.local/bin/bench start
+2024-12-10 11:36:11,317 INFO /home/aakvatech/.local/bin/bench restart
+2024-12-10 11:36:11,679 DEBUG cd /home/aakvatech/frappe-bench && sudo supervisorctl restart frappe:
+2024-12-10 11:36:11,876 WARNING cd /home/aakvatech/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-12-10 11:36:11,877 WARNING /home/aakvatech/.local/bin/bench restart executed with exit code 1
+2024-12-10 11:36:25,279 INFO /home/aakvatech/.local/bin/bench restart
+2024-12-10 11:36:25,633 DEBUG cd /home/aakvatech/frappe-bench && sudo supervisorctl restart frappe:
+2024-12-10 11:36:25,831 WARNING cd /home/aakvatech/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-12-10 11:36:25,831 WARNING /home/aakvatech/.local/bin/bench restart executed with exit code 1
+2024-12-10 11:37:36,457 INFO /home/aakvatech/.local/bin/bench get-app https://github.com/frappe/non_profit.git
+2024-12-10 11:37:41,714 INFO App moved from apps/non_profit to archived/apps/non_profit-2024-12-10
+2024-12-10 11:37:41,720 LOG Getting non_profit
+2024-12-10 11:37:41,720 DEBUG cd ./apps && git clone https://github.com/frappe/non_profit.git  --depth 1 --origin upstream
+2024-12-10 11:37:44,166 LOG Installing non_profit
+2024-12-10 11:37:44,166 DEBUG cd /home/aakvatech/frappe-bench && /home/aakvatech/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/aakvatech/frappe-bench/apps/non_profit 
+2024-12-10 11:37:45,562 DEBUG cd /home/aakvatech/frappe-bench && /home/aakvatech/frappe-bench/env/bin/python -m pip install --quiet --upgrade -r ./apps/non_profit/dev-requirements.txt
+2024-12-10 11:37:47,034 DEBUG bench build --app non_profit
+2024-12-10 11:37:47,155 INFO /home/aakvatech/.local/bin/bench build --app non_profit
+2024-12-10 11:37:48,941 DEBUG cd /home/aakvatech/frappe-bench && sudo supervisorctl restart frappe:
+2024-12-10 11:37:49,150 WARNING cd /home/aakvatech/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-12-10 11:37:49,150 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-12-10 11:38:09,502 INFO /home/aakvatech/.local/bin/bench restart
+2024-12-10 11:38:09,861 DEBUG cd /home/aakvatech/frappe-bench && sudo supervisorctl restart frappe:
+2024-12-10 11:38:10,055 WARNING cd /home/aakvatech/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-12-10 11:38:10,056 WARNING /home/aakvatech/.local/bin/bench restart executed with exit code 1
+2024-12-10 11:40:18,375 INFO /home/aakvatech/.local/bin/bench restart
+2024-12-10 11:40:18,733 DEBUG cd /home/aakvatech/frappe-bench && sudo supervisorctl restart frappe:
+2024-12-10 11:40:18,930 WARNING cd /home/aakvatech/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-12-10 11:40:18,930 WARNING /home/aakvatech/.local/bin/bench restart executed with exit code 1
+2024-12-10 11:40:24,490 INFO /home/aakvatech/.local/bin/bench start
+2024-12-10 11:41:21,901 INFO /home/aakvatech/.local/bin/bench --site radiologist_com install-app non_profit
+2024-12-10 11:43:12,204 INFO /home/aakvatech/.local/bin/bench get-app erpnext --branc
+2024-12-10 11:43:12,215 WARNING /home/aakvatech/.local/bin/bench get-app erpnext --branc executed with exit code 2
+2024-12-10 11:45:09,136 INFO /home/aakvatech/.local/bin/bench init erpnext-bench --frappe-branch version-14
+2024-12-10 11:45:09,187 DEBUG cd erpnext-bench && python3 -m venv env
+2024-12-10 11:45:12,151 DEBUG cd erpnext-bench && /home/aakvatech/frappe-bench/erpnext-bench/env/bin/python -m pip install --quiet --upgrade pip
+2024-12-10 11:45:14,657 DEBUG cd erpnext-bench && /home/aakvatech/frappe-bench/erpnext-bench/env/bin/python -m pip install --quiet wheel
+2024-12-10 11:45:19,378 LOG Getting frappe
+2024-12-10 11:45:19,379 DEBUG cd erpnext-bench/apps && git clone https://github.com/frappe/frappe.git --branch version-14 --depth 1 --origin upstream
+2024-12-10 11:46:14,732 WARNING cd erpnext-bench/apps && git clone https://github.com/frappe/frappe.git --branch version-14 --depth 1 --origin upstream executed with exit code 128
+2024-12-10 11:46:15,744 ERROR There was a problem while creating erpnext-bench
+2024-12-10 11:46:19,878 INFO Rolling back Bench "erpnext-bench"
+2024-12-10 11:46:53,789 INFO /home/aakvatech/.local/bin/bench new-site erpnext.local
+2024-12-10 11:48:28,178 INFO /home/aakvatech/.local/bin/bench get-app erpnext --branch version-14
+2024-12-10 11:48:30,024 LOG Getting erpnext
+2024-12-10 11:48:30,024 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-14 --depth 1 --origin upstream
+2024-12-10 11:49:30,363 WARNING cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-14 --depth 1 --origin upstream executed with exit code 128
+2024-12-10 11:49:30,364 WARNING /home/aakvatech/.local/bin/bench get-app erpnext --branch version-14 executed with exit code 1
+2024-12-10 11:50:44,210 INFO /home/aakvatech/.local/bin/bench --site erpnexr.local install-app erpnext
+2024-12-10 11:50:57,607 INFO /home/aakvatech/.local/bin/bench --site erpnext.local install-app erpnext
+2024-12-10 11:51:48,173 INFO /home/aakvatech/.local/bin/bench get-app erpnext --branch version-14
+2024-12-10 11:51:49,782 LOG Getting erpnext
+2024-12-10 11:51:49,782 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-14 --depth 1 --origin upstream
+2024-12-10 11:52:05,992 LOG Installing erpnext
+2024-12-10 11:52:05,992 DEBUG cd /home/aakvatech/frappe-bench && /home/aakvatech/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/aakvatech/frappe-bench/apps/erpnext 
+2024-12-10 11:52:17,790 WARNING cd /home/aakvatech/frappe-bench && /home/aakvatech/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/aakvatech/frappe-bench/apps/erpnext  executed with exit code 1
+2024-12-10 11:52:17,790 WARNING /home/aakvatech/.local/bin/bench get-app erpnext --branch version-14 executed with exit code 1
+2024-12-10 11:54:30,782 INFO /home/aakvatech/.local/bin/bench version
+2024-12-10 11:54:40,025 INFO /home/aakvatech/.local/bin/bench get-app erpnext --branch version-15
+2024-12-10 11:54:43,517 INFO App moved from apps/erpnext to archived/apps/erpnext-2024-12-10_1
+2024-12-10 11:54:43,520 LOG Getting erpnext
+2024-12-10 11:54:43,520 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-15 --depth 1 --origin upstream
+2024-12-10 11:55:23,910 LOG Installing erpnext
+2024-12-10 11:55:23,911 DEBUG cd /home/aakvatech/frappe-bench && /home/aakvatech/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/aakvatech/frappe-bench/apps/erpnext 
+2024-12-10 11:55:27,169 DEBUG cd /home/aakvatech/frappe-bench/apps/erpnext && yarn install --check-files
+2024-12-10 11:55:29,560 DEBUG bench build --app erpnext
+2024-12-10 11:55:29,715 INFO /home/aakvatech/.local/bin/bench build --app erpnext
+2024-12-10 11:55:42,630 DEBUG cd /home/aakvatech/frappe-bench && sudo supervisorctl restart frappe:
+2024-12-10 11:55:42,836 WARNING cd /home/aakvatech/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-12-10 11:55:42,836 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-12-10 11:55:55,911 INFO /home/aakvatech/.local/bin/bench restart
+2024-12-10 11:55:56,266 DEBUG cd /home/aakvatech/frappe-bench && sudo supervisorctl restart frappe:
+2024-12-10 11:55:56,456 WARNING cd /home/aakvatech/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-12-10 11:55:56,456 WARNING /home/aakvatech/.local/bin/bench restart executed with exit code 1
+2024-12-10 11:57:51,735 INFO /home/aakvatech/.local/bin/bench setup supervisor
+2024-12-10 11:57:51,918 LOG Updated supervisord.conf: 'chmod' changed from '0700                       ; sockef file mode (default 0700)' to '0760'
+2024-12-10 11:57:51,918 LOG Updated supervisord.conf: 'chown' changed from '' to 'aakvatech:aakvatech'
+2024-12-10 11:58:00,907 WARNING /home/aakvatech/.local/bin/bench setup supervisor executed with exit code 1
+2024-12-10 11:58:50,723 INFO /home/aakvatech/.local/bin/bench restart
+2024-12-10 11:58:51,081 DEBUG cd /home/aakvatech/frappe-bench && sudo supervisorctl restart frappe:
+2024-12-10 11:58:51,266 WARNING cd /home/aakvatech/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-12-10 11:58:51,267 WARNING /home/aakvatech/.local/bin/bench restart executed with exit code 1
+2024-12-10 11:59:39,124 INFO /home/aakvatech/.local/bin/bench setup production aakvatech
+2024-12-10 11:59:39,124 WARNING superuser privileges required for this command
+2024-12-10 12:00:01,753 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-10 12:14:51,705 INFO /home/aakvatech/.local/bin/bench get-app erpnext --branch version-15
+2024-12-10 12:15:11,011 LOG Installing erpnext
+2024-12-10 12:15:11,012 DEBUG cd /home/aakvatech/frappe-bench && /home/aakvatech/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/aakvatech/frappe-bench/apps/erpnext 
+2024-12-10 12:15:14,784 DEBUG cd /home/aakvatech/frappe-bench/apps/erpnext && yarn install --check-files
+2024-12-10 12:15:15,386 DEBUG bench build --app erpnext
+2024-12-10 12:15:15,507 INFO /home/aakvatech/.local/bin/bench build --app erpnext
+2024-12-10 12:15:24,619 DEBUG cd /home/aakvatech/frappe-bench && sudo supervisorctl restart frappe:
+2024-12-10 12:15:24,818 WARNING cd /home/aakvatech/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-12-10 12:15:24,818 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-12-10 12:16:10,210 INFO /home/aakvatech/.local/bin/bench --site erpnext.local instaa-app erpnext
+2024-12-10 12:16:20,626 INFO /home/aakvatech/.local/bin/bench --site erpnext.local install-app erpnext
+2024-12-10 12:18:38,327 INFO /home/aakvatech/.local/bin/bench start
+2024-12-10 12:25:28,773 INFO /home/aakvatech/.local/bin/bench start
+2024-12-10 12:39:29,040 INFO /home/aakvatech/.local/bin/bench start
+2024-12-10 13:13:37,328 INFO /home/aakvatech/.local/bin/bench start
+2024-12-10 14:11:04,707 INFO /home/aakvatech/.local/bin/bench new-site library_managment
+2024-12-10 14:12:48,802 INFO /home/aakvatech/.local/bin/bench new-app library.managment
+2024-12-10 14:13:03,764 INFO /home/aakvatech/.local/bin/bench new-app librarymanagment
+2024-12-10 14:13:03,768 LOG creating new app librarymanagment
+2024-12-10 14:14:06,364 LOG Installing librarymanagment
+2024-12-10 14:14:06,366 DEBUG cd /home/aakvatech/frappe-bench && /home/aakvatech/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/aakvatech/frappe-bench/apps/librarymanagment 
+2024-12-10 14:14:09,965 DEBUG bench build --app librarymanagment
+2024-12-10 14:14:10,084 INFO /home/aakvatech/.local/bin/bench build --app librarymanagment
+2024-12-10 14:14:18,102 DEBUG cd /home/aakvatech/frappe-bench && sudo supervisorctl restart frappe:
+2024-12-10 14:14:18,322 WARNING cd /home/aakvatech/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-12-10 14:14:18,322 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-12-10 14:14:51,987 INFO /home/aakvatech/.local/bin/bench --site-library_managment install-app librarymanagment
+2024-12-10 14:16:28,021 INFO /home/aakvatech/.local/bin/bench --site library_managment install-app librarymanagment
+2024-12-10 14:16:49,291 INFO /home/aakvatech/.local/bin/bench start
+2024-12-10 14:21:47,049 INFO /home/aakvatech/.local/bin/bench start
+2024-12-10 14:30:05,109 INFO /home/aakvatech/.local/bin/bench init frappe-bench
+2024-12-10 14:30:05,113 ERROR Bench instance already exists at frappe-bench
+2024-12-10 14:30:51,955 INFO /home/aakvatech/.local/bin/bench --site library_managment set-config --global developer_mode 1
+2024-12-10 14:31:04,703 INFO /home/aakvatech/.local/bin/bench restart
+2024-12-10 14:31:10,081 DEBUG cd /home/aakvatech/frappe-bench && sudo supervisorctl restart frappe:
+2024-12-10 14:31:10,276 WARNING cd /home/aakvatech/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-12-10 14:31:10,276 WARNING /home/aakvatech/.local/bin/bench restart executed with exit code 1
+2024-12-10 14:34:00,473 INFO /home/aakvatech/.local/bin/bench --site library_managment set-config --global developer_mode 1
+2024-12-10 14:34:04,585 INFO /home/aakvatech/.local/bin/bench restart
+2024-12-10 14:34:04,945 DEBUG cd /home/aakvatech/frappe-bench && sudo supervisorctl restart frappe:
+2024-12-10 14:34:05,141 WARNING cd /home/aakvatech/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-12-10 14:34:05,141 WARNING /home/aakvatech/.local/bin/bench restart executed with exit code 1
+2024-12-10 14:34:11,280 INFO /home/aakvatech/.local/bin/bench restart
+2024-12-10 14:34:11,635 DEBUG cd /home/aakvatech/frappe-bench && sudo supervisorctl restart frappe:
+2024-12-10 14:34:11,833 WARNING cd /home/aakvatech/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-12-10 14:34:11,833 WARNING /home/aakvatech/.local/bin/bench restart executed with exit code 1
+2024-12-10 14:37:33,299 INFO /home/aakvatech/.local/bin/bench --site library_managment add-to-hosts
+2024-12-10 14:37:43,029 INFO /home/aakvatech/.local/bin/bench start
+2024-12-10 14:37:43,372 INFO /home/aakvatech/.local/bin/bench worker
+2024-12-10 14:37:43,382 INFO /home/aakvatech/.local/bin/bench watch
+2024-12-10 14:37:43,400 INFO /home/aakvatech/.local/bin/bench schedule
+2024-12-10 14:37:43,487 INFO /home/aakvatech/.local/bin/bench serve --port 8002
+2024-12-10 15:06:55,204 INFO /home/aakvatech/.local/bin/bench --site library_managment mariadb
+2024-12-10 16:46:47,770 INFO /home/aakvatech/.local/bin/bench delete_doctype LIbrary Membership
+2024-12-10 18:00:01,950 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-10 18:09:28,553 INFO /home/aakvatech/.local/bin/bench new-app testing
+2024-12-10 18:09:28,561 LOG creating new app testing
+2024-12-10 18:12:16,233 LOG Installing testing
+2024-12-10 18:12:16,236 DEBUG cd /home/aakvatech/frappe-bench && /home/aakvatech/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/aakvatech/frappe-bench/apps/testing 
+2024-12-10 18:12:18,823 DEBUG bench build --app testing
+2024-12-10 18:12:18,976 INFO /home/aakvatech/.local/bin/bench build --app testing
+2024-12-10 18:12:45,050 DEBUG cd /home/aakvatech/frappe-bench && sudo supervisorctl restart frappe:
+2024-12-10 18:12:45,253 WARNING cd /home/aakvatech/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-12-10 18:12:45,253 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-12-11 09:07:19,410 INFO /home/aakvatech/.local/bin/bench --site library_managment add-to-host
+2024-12-11 09:09:32,880 INFO /home/aakvatech/.local/bin/bench --site library_managment add-to-host
+2024-12-11 09:12:07,709 INFO /usr/local/bin/bench --site library_managment add-to-host
+2024-12-11 09:12:08,644 WARNING /usr/local/bin/bench --site library_managment add-to-host executed with exit code 2
+2024-12-11 09:15:30,982 INFO /home/aakvatech/.local/bin/bench --site library_managment add-to-host
+2024-12-11 09:21:18,819 INFO /home/aakvatech/.local/bin/bench --site library_managment add-to-host
+2024-12-11 09:21:50,878 INFO /home/aakvatech/.local/bin/bench --site library_managment add-to-host
+2024-12-11 09:24:59,428 INFO /home/aakvatech/.local/bin/bench use library_managment
+2024-12-11 09:25:55,346 INFO /home/aakvatech/.local/bin/bench start
+2024-12-11 09:25:55,710 INFO /home/aakvatech/.local/bin/bench watch
+2024-12-11 09:25:55,724 INFO /home/aakvatech/.local/bin/bench worker
+2024-12-11 09:25:55,730 INFO /home/aakvatech/.local/bin/bench schedule
+2024-12-11 09:25:55,732 INFO /home/aakvatech/.local/bin/bench serve --port 8002

@@ -1,0 +1,61 @@
+{
+    "frappe": {
+        "resolution": {
+            "commit_hash": null,
+            "branch": null
+        },
+        "required": [],
+        "idx": 1,
+        "version": "15.49.1"
+    },
+    "radiologistis": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "ac6e1086f3d6597fffeda4d738e87201c38b647b",
+            "branch": "develop"
+        },
+        "required": [],
+        "idx": 2,
+        "version": "0.0.1"
+    },
+    "non_profit": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "ea2c88ddb04d60e7a81bfae58a1307d5f6496487",
+            "branch": "develop"
+        },
+        "required": [],
+        "idx": 3,
+        "version": "0.0.1"
+    },
+    "erpnext": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "3c8abe41e799043db43cfcad7d9c49439521ccbc",
+            "branch": "version-15"
+        },
+        "required": [],
+        "idx": 4,
+        "version": "15.45.4"
+    },
+    "librarymanagment": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "8bd2dfd87826cd6b66db141d83b28b377343fb59",
+            "branch": "develop"
+        },
+        "required": [],
+        "idx": 5,
+        "version": "0.0.1"
+    },
+    "testing": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "556b408211e30ea25f7d9a08b4b9ae7037ae3294",
+            "branch": "develop"
+        },
+        "required": [],
+        "idx": 6,
+        "version": "0.0.1"
+    }
+}

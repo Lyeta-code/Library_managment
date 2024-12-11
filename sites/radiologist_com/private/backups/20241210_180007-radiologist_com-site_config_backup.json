@@ -1,0 +1,8 @@
+{
+ "db_name": "_00b39589d81317c4",
+ "db_password": "lR2yPVDR0uXS8ilK",
+ "db_type": "mariadb",
+ "developer_mode": 1,
+ "encryption_key": "92n9txM9cquS6LOAYk_KWpHfXvetikEkR89yvja9fSc=",
+ "restart_realtime_on_change": true
+}
